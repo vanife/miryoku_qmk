@@ -1,0 +1,8 @@
+name: 'Build miryoku_qmk for kprepublic/bm40hsrgb/rev2'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      keyboard: '["kprepublic/bm40hsrgb/default"]'
